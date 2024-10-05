@@ -8,8 +8,8 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
     # Da onde vem meus requests.
-    origins "http://localhost:5173"
-    # origins "outrodominio.com " -- Fazer isso depois
+    origins "http://127.0.0.1:5173"
+    # origins "outrodominio.com " -- Fazer
     resource "*",
       headers: :any,
       methods: [:get, :post, :put, :patch, :delete, :options, :head]
